@@ -1,0 +1,9 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+.RightSide > h2 {
+    padding: 15px 10px;
+}

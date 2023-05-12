@@ -1,0 +1,32 @@
+.ContentSide {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.player-wrapper{
+    height: 75vh;
+}
+.Comments{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(233, 226, 226);
+}
+
+.Comments > div {
+    margin-top: 20px;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-send{
+    align-self: flex-start;
+    border: none;
+    outline: none;
+    color: rgb(202, 11, 84);
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+}

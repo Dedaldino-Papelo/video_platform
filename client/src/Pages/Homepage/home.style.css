@@ -1,0 +1,10 @@
+.Homepage{
+    display: flex;
+    flex-direction: column;
+}
+
+.Homepage > div {
+    display: grid;
+    grid-template-columns: auto 20rem;
+    gap: 2rem
+}
