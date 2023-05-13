@@ -11,6 +11,7 @@ const Content = () => {
       <div className="player-wrapper">
           <ReactPlayer
             className="react-player"
+            playing={true}
             url={`${video.videoUrl}`}
             width="100%"
             height="75vh"
