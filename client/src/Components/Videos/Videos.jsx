@@ -11,8 +11,6 @@ const Videos = () => {
   const fetchVideo = useSelector((state) => state.videoReducer)
   const { loading, videos } = fetchVideo
 
-  console.log("inside", videos)
-
   useEffect(() => {
     let data = "kelson"
     dispatch(fetchVideos(data))

@@ -1,7 +1,8 @@
 .RightSide{
     display: flex;
     flex-direction: column;
-    background-color: #ccc;
+    background-color: #241d1d;
+    color: #ccc;
 }
 
 .RightSide > h2 {

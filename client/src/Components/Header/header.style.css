@@ -1,5 +1,5 @@
 .Header {
-    background-color: #ccc;
+    background-color: #241d1d;
     display: flex;
     justify-content: center;
     padding: 15px 15px;
@@ -8,4 +8,9 @@
 
 .Header > h2 {
     font-weight: bold;
+    color: #ccc;
+    font-size: 2em;
+}
+.Header > h2 > span {
+color: #08d108;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.style.css'
-import RightSide from '../../Components/RightSide/RightSide'
+import SideBar from '../../Components/SideBar/SideBar'
 import Header from '../../Components/Header/Header'
 import Content from '../../Components/ContentSide/Content'
 
@@ -10,7 +10,7 @@ const Home = () => {
       <Header />
       <div className=''>
         <Content />
-        <RightSide />
+        <SideBar />
       </div>
     </div>
   )

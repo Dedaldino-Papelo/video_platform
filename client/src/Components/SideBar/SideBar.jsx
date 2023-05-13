@@ -2,7 +2,7 @@ import React from 'react'
 import './Right.style.css'
 import Videos from '../Videos/Videos'
 
-const RightSide = () => {
+const SideBar = () => {
   return (
     <div className='RightSide'>
       <h2>Videos</h2>
@@ -11,4 +11,4 @@ const RightSide = () => {
   )
 }
 
-export default RightSide
+export default SideBar

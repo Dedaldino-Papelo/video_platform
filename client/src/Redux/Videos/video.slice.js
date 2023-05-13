@@ -17,10 +17,25 @@ export const fetchVideos = createAsyncThunk(
   }
 )
 
+export const fetchVideoById = createAsyncThunk(
+  'users/fetchVideoById',
+  async (id, { fulfillWithValue, rejectWithValue }) => {
+    try {
+        const response = await api.get(`video/${id}`)
+
+        return fulfillWithValue(response.data)
+
+    } catch (error) {
+          return rejectWithValue(error.response.data.message)
+    }
+  }
+)
+
 const initialState = {
   videos: [],
   loading: false,
-  error: ""
+  error: "",
+  video: {}
 } 
 
 // Then, handle actions in your reducers:
@@ -45,6 +60,25 @@ const videoSlice = createSlice({
         state.videos = []
         state.error = action.payload
       })
+
+      //===========================================================
+      builder.addCase(fetchVideoById.pending, (state) => {
+        state.loading = true
+      }),
+  
+      builder.addCase(fetchVideoById.fulfilled, (state, action) => {
+          state.loading = false
+          state.video = action.payload
+          state.error = ""
+        }),
+  
+        builder.addCase(fetchVideoById.rejected, (state, action) => {
+          state.loading = false
+          state.video = {}
+          state.error = action.payload
+        })
+
+
   },
 })
 

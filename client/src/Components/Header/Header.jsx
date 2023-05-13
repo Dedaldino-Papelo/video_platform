@@ -4,7 +4,7 @@ import './header.style.css'
 const Header = () => {
   return (
     <div className='Header'>
-        <h2>Video Platform</h2>
+        <h2>Video <span>Platform</span></h2>
     </div>
   )
 }

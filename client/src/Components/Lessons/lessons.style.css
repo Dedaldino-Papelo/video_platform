@@ -1,3 +1,8 @@
 .Lessons > div{
     padding: 15px 10px;
 }
+
+.Lessons > div:hover {
+    background-color: #3a3131;;
+    cursor: pointer;
+}
